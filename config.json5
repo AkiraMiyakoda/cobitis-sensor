@@ -1,0 +1,22 @@
+// This is a config file example.
+// Actual config files must be
+//  /etc/cobitis-sensor/config_devel.json5 for development,
+//  /etc/cobitis-sensor/config.json5       for production.
+
+{
+  // IDs of temperature and TDS sensors.
+  sensor_ids: [
+    "28-xxxxxxxxxxxx",  // Unique ID of DS18B20 for inside the tank.
+    "28-xxxxxxxxxxxx",  // Unique ID of DS18B20 for outside the tank.
+    "0"                 // Input channel of ADS1115 that a TDS sensor is connected.
+  ],
+
+  // URL of the Cobitis server.
+  socket_url: "https://xxxxxxxx.net/",
+
+  // Unique ID of this sensor. Must be registerd in server's database.
+  uuid:       "00000000-0000-0000-0000-000000000000",
+
+  // Measurement interval in ms. 60000 means 1 minute.
+  interval: 60000,
+}
