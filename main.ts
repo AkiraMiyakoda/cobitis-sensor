@@ -1,5 +1,5 @@
-import * as sensors from "./modules/sensors";
-import * as config from "./modules/config";
+import * as sensors from "./utils/sensors";
+import * as config from "./utils/config";
 
 class Main
 {
