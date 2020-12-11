@@ -3,7 +3,7 @@ import * as math from "mathjs";
 
 const get_temp = (sensor_id: string): (number | null) =>
 {
-  const PATH = "/sys/bus/w1/devices/";
+  const PATH = "/sys/bus/w1/devices/28-";
 
   try {
     // Find the string like " t=21562".

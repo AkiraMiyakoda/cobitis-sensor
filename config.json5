@@ -6,9 +6,9 @@
 {
   // IDs of temperature and TDS sensors.
   sensor_ids: [
-    "28-xxxxxxxxxxxx",  // Unique ID of DS18B20 for inside the tank.
-    "28-xxxxxxxxxxxx",  // Unique ID of DS18B20 for outside the tank.
-    "0"                 // Input channel of ADS1115 that a TDS sensor is connected.
+    "xxxxxxxxxxxx", // Unique ID of DS18B20 for inside the tank.
+    "xxxxxxxxxxxx", // Unique ID of DS18B20 for outside the tank.
+    "0"             // Input channel of ADS1115 that a TDS sensor is connected.
   ],
 
   // URL of the Cobitis server.
