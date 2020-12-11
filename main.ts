@@ -41,12 +41,12 @@ class Main
     this.post(sensors.get_all(config.sensor_ids()));
   };
 
-  private readonly post = (data: any): void =>
+  private readonly post = (data: (number | null)[]): void =>
   {
     try {
       // Post the latest measurements to the server.
 
-      this.socket.emit("sensor_values", data, (result: any) => {
+      this.socket.emit("sensor_values", data, (result: boolean) => {
         if (result) {
           console.error(`Sent ${JSON.stringify(data)}`);
         }

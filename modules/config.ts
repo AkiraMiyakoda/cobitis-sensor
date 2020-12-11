@@ -8,7 +8,12 @@ class Internal
   private readonly dir = "/etc/cobitis-sensor/";
   private readonly file = this.is_devel ? "config_devel.json5" : "config.json5";
 
-  public readonly raw_data: any;
+  public readonly raw_data: {
+    sensor_ids: string[],
+    socket_url: string,
+    uuid:       string,
+    interval:   number,
+  };
 
   constructor() {
     this.raw_data = json5.parse(fs.readFileSync(path.join(this.dir, this.file)).toString());
