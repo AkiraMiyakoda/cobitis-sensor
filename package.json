@@ -1,0 +1,25 @@
+{
+  "name": "cobitis-sensor",
+  "version": "0.1.0",
+  "description": "Cobitis Aquarium Monitor Sensor Service",
+  "main": "index.js",
+  "dependencies": {
+    "json5": "^2.1.3",
+    "mathjs": "^8.1.0",
+    "socket.io-client": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/dateformat": "^3.0.1",
+    "@types/json5": "0.0.30",
+    "@types/mathjs": "^6.0.8",
+    "@types/node": "^14.14.9",
+    "@types/socket.io-client": "^1.4.34",
+    "@types/typescript": "^2.0.0",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "author": "Akira Miyakoda",
+  "license": "MIT"
+}

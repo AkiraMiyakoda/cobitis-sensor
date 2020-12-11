@@ -1,0 +1,4 @@
+.vscode/
+.secret/
+node_modules/
+*.js

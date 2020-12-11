@@ -1,0 +1,13 @@
+[Unit]
+Description = Cobitis Tank Monitoring - Sensor Service
+
+[Service]
+ExecStart = /usr/local/bin/node /home/cobitis-dev/cobitis-sensor/index.js
+Restart = always
+Type = simple
+User = cobitis
+Group = cobitis
+Environment = "NODE_ENV=production"
+
+[Install]
+WantedBy = multi-user.target
