@@ -30,11 +30,11 @@ const get_tds = (analog_no: string): (number | null) =>
 
   try {
     // raw * scale = mV
-    // 0mV ~ 2300mV represent 0 ~ 1000ppm
+    // 0mV ~ 2300mV represents 0 ~ 800ppm (calibarated with HiKiNS TDS meter)
 
     const raw   = fs.readFileSync(`${PATH}in_voltage${analog_no}_raw`).toString();
     const scale = fs.readFileSync(`${PATH}in_voltage${analog_no}_scale`).toString();
-    return math.round(parseFloat(raw) * parseFloat(scale) / 2.3, 1);
+    return math.round(parseFloat(raw) * parseFloat(scale) / 2.875, 1);
   }
   catch (e) {
     console.error("Failed to fetch TDS value.", e);
