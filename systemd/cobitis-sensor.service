@@ -2,7 +2,7 @@
 Description = Cobitis Tank Monitoring - Sensor Service
 
 [Service]
-ExecStart = /usr/local/bin/node /home/cobitis-dev/cobitis-sensor/index.js
+ExecStart = /usr/local/bin/node /home/cobitis-dev/cobitis-sensor/main.js
 Restart = always
 Type = simple
 User = cobitis
